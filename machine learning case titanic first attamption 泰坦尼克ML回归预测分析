@@ -10,3 +10,5 @@ mean_age=df["Age"].mean()
 df.loc[:,"Age"]=df["Age"].fillna(mean_age)
 # 或者 import numpy as np
 # df2.replace(np.nan, 'mean_age')
+#11，12行是错的 要用这个来写 
+#df2["Age"]=df2["Age"].replace(np.nan, mean_age)
